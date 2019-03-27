@@ -1,0 +1,250 @@
+# Debconf translations for tvtime.
+# Copyright (C) 2016 THE tvtime'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tvtime package.
+# Adriano Rafael Gomes <adrianorg@arg.eti.br>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tvtime\n"
+"Report-Msgid-Bugs-To: tvtime@packages.debian.org\n"
+"POT-Creation-Date: 2012-05-06 12:57+0000\n"
+"PO-Revision-Date: 2016-01-24 13:42-0200\n"
+"Last-Translator: Adriano Rafael Gomes <adrianorg@arg.eti.br>\n"
+"Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
+"org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: select
+#. Description
+#: ../templates:2001
+msgid "TV standard:"
+msgstr "Padrão de TV:"
+
+#. Type: select
+#. Description
+#: ../templates:2001
+msgid ""
+"Please choose the TV standard to use. NTSC is used in North America, much of "
+"South America, and Japan; SECAM in France, the former USSR, and parts of "
+"Africa and the Middle East; and PAL elsewhere."
+msgstr ""
+"Por favor, escolha o padrão de TV para usar. NTSC é usado na América do "
+"Norte, muito usado na América do Sul e Japão; SECAM na França, na ex-União "
+"Soviética, e em partes da África e Meio Oeste; e PAL em outros lugares."
+
+#. Type: select
+#. Choices
+#. Type: select
+#. Choices
+#: ../templates:3001 ../templates:4001
+msgid "Cable"
+msgstr "Cabo"
+
+#. Type: select
+#. Choices
+#. Type: select
+#. Choices
+#: ../templates:3001 ../templates:4001
+msgid "Broadcast"
+msgstr "Broadcast"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "Cable including channels 100+"
+msgstr "Cabo incluindo canais 100+"
+
+#. Type: select
+#. Description
+#. Type: select
+#. Description
+#. Type: select
+#. Description
+#: ../templates:3002 ../templates:4002 ../templates:5002
+msgid "Default frequency table:"
+msgstr "Tabela de frequências padrão:"
+
+#. Type: select
+#. Description
+#: ../templates:3002
+msgid ""
+"Please choose the frequency table to use. It specifies which frequencies "
+"correspond to the familiar channel numbers. You should select \"Broadcast\" "
+"if you use an antenna for over-the-air signals."
+msgstr ""
+"Por favor, escolha a tabela de frequências para usar. Ela especifica quais "
+"frequências correspondem aos números de canais comuns. Você deve escolher "
+"\"Broadcast\" se você usa uma antena para sinais \"over-the-air\"."
+
+#. Type: select
+#. Description
+#. Type: select
+#. Description
+#: ../templates:4002 ../templates:5002
+msgid ""
+"Please choose the frequency table to use. It specifies which frequencies "
+"correspond to the familiar channel numbers."
+msgstr ""
+"Por favor, escolha a tabela de frequências para usar. Ela especifica quais "
+"frequências correspondem aos números de canais comuns."
+
+#. Type: select
+#. Description
+#: ../templates:4002
+msgid ""
+"You should select \"Broadcast\" if you use an antenna for over-the-air "
+"signals."
+msgstr ""
+"Você deve escolher \"Broadcast\" se você usa uma antena para sinais \"over-"
+"the-air\"."
+
+#. Type: select
+#. Choices
+#: ../templates:5001
+msgid "Europe"
+msgstr "Europa"
+
+#. Type: select
+#. Choices
+#: ../templates:5001
+msgid "France"
+msgstr "França"
+
+#. Type: select
+#. Choices
+#: ../templates:5001
+msgid "Russia"
+msgstr "Rússia"
+
+# #-#-#-#-#  iso-codes_3.63-1_pt_BR.po (iso_3166)  #-#-#-#-#
+# AU
+#. Type: select
+#. Choices
+#: ../templates:5001
+msgid "Australia"
+msgstr "Austrália"
+
+#. Type: select
+#. Choices
+#: ../templates:5001
+msgid "New Zealand"
+msgstr "Nova Zelândia"
+
+#. Type: select
+#. Choices
+#: ../templates:5001
+msgid "China Broadcast"
+msgstr "China Broadcast"
+
+#. Type: select
+#. Choices
+#: ../templates:5001
+msgid "Australia Optus"
+msgstr "Austrália Optus"
+
+#. Type: select
+#. Choices
+#: ../templates:5001
+msgid "Custom (must run tvtime-scanner first)"
+msgstr "Personalizado (deve executar tvtime-scanner primeiro)"
+
+#. Type: select
+#. Description
+#: ../templates:5002
+msgid ""
+"If you are a user of a cable company that does not use standard frequencies, "
+"you should select \"Custom\" and run the tvtime-scanner application before "
+"using tvtime."
+msgstr ""
+"Se você for um usuário de uma companhia de TV à cabo que não usa frequências "
+"padrão, você deve escolher \"Personalizado\" e executar o aplicativo tvtime-"
+"scanner antes de usar o tvtime."
+
+#. Type: string
+#. Description
+#: ../templates:6001
+msgid "Default television capture device:"
+msgstr "Dispositivo padrão de captura de televisão:"
+
+#. Type: string
+#. Description
+#: ../templates:6001
+msgid ""
+"Please choose the video4linux device which corresponds to your capture card."
+msgstr ""
+"Por favor, selecione o dispositivo video4linux correspondente à sua placa de "
+"captura."
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid "Device to use for VBI decoding:"
+msgstr "Dispositivo para ser usado para decodificação VBI:"
+
+#. Type: string
+#. Description
+#: ../templates:7001
+msgid ""
+"Please choose the device that will be used in NTSC areas for decoding closed "
+"captions and XDS channel information."
+msgstr ""
+"Por favor, escolha o dispositivo que será usado em áreas NTSC para "
+"decodificação de legendas \"closed caption\" e informações de canal XDS."
+
+#. Type: boolean
+#. Description
+#: ../templates:8001
+msgid "Allow tvtime to run with root privileges?"
+msgstr "Permitir que o tvtime execute com privilégios de root?"
+
+#. Type: boolean
+#. Description
+#: ../templates:8001
+msgid ""
+"Please choose whether tvtime should be \"setuid root\", therefore getting "
+"root privileges when running."
+msgstr ""
+"Por favor, escolha se o tvtime deve ser \"setuid root\", portanto recebendo "
+"privilégios de root ao executar."
+
+#. Type: boolean
+#. Description
+#: ../templates:8001
+msgid ""
+"This allows tvtime to run at a high priority to ensure smooth video and "
+"should be used for high quality video output even during high CPU load."
+msgstr ""
+"Isso permite que o tvtime execute com uma prioridade mais alta para "
+"assegurar vídeo fluido e deve ser usado para saída de vídeo de alta "
+"qualidade mesmo sob alta carga de CPU."
+
+#. Type: string
+#. Description
+#: ../templates:9001
+msgid "Process priority for the tvtime binary:"
+msgstr "Prioridade do processo para o binário do tvtime:"
+
+#. Type: string
+#. Description
+#: ../templates:9001
+msgid ""
+"This setting controls the priority of the tvtime process relative to other "
+"processes on the system."
+msgstr ""
+"Essa configuração controla a prioridade do processo do tvtime em relação a "
+"outros processos no sistema."
+
+#. Type: string
+#. Description
+#: ../templates:9001
+msgid ""
+"Allowed values are integers between -20 and 19. Lower values indicate higher "
+"priority, and a value of 0 would give tvtime the same priority as a normal "
+"process."
+msgstr ""
+"São permitidos valores inteiros entre -20 e 19. Valores mais baixos indicam "
+"prioridades mais altas, e um valor igual a 0 dará ao tvtime a mesma "
+"prioridade de um processo normal."
