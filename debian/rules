@@ -33,7 +33,6 @@ CFLAGS += -Wall
 config.status: configure
 	dh_testdir
 	dh_autotools-dev_updateconfig
-	./autogen.sh
 	# Add here commands to configure the package.
 	./configure --host=$(DEB_HOST_GNU_TYPE)       \
 	            --build=$(DEB_BUILD_GNU_TYPE)     \
