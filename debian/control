@@ -4,7 +4,10 @@ Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends:
  debhelper (>= 7),
+ build-essential,
+ automake,
  autotools-dev,
+ dh-autoreconf,
  zlib1g-dev,
  libpng-dev,
  libfreetype6-dev,
