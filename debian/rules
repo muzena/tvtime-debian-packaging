@@ -30,9 +30,16 @@ DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 
 CFLAGS += -Wall
 
-config.status: configure
+autogen: autogen-stamp
+
+autogen-stamp:
 	dh_testdir
-	dh_autotools-dev_updateconfig
+	 ./autogen.sh
+	touch autogen-stamp
+
+config.status:
+	dh_testdir
+	dh_autoreconf
 	# Add here commands to configure the package.
 	./configure --host=$(DEB_HOST_GNU_TYPE)       \
 	            --build=$(DEB_BUILD_GNU_TYPE)     \
@@ -51,13 +58,25 @@ build: build-arch build-indep
 build-arch: build-stamp
 build-indep: build-stamp
 
-build-stamp:  config.status
+#build-stamp:  config.status
+#	dh_testdir
+#
+	# Add here commands to compile the package.
+#	$(MAKE) FONT_CFLAGS='-DFONTDIR="\"/usr/share/fonts/truetype/freefont\""'
+
+#	touch build-stamp
+
+build: build-stamp
+	
+build-stamp:  autogen-stamp config.status 
+	./autogen.sh
 	dh_testdir
 
 	# Add here commands to compile the package.
-	$(MAKE) FONT_CFLAGS='-DFONTDIR="\"/usr/share/fonts/truetype/freefont\""'
+	$(MAKE)
+	#docbook-to-man debian/freetuxtv.sgml > freetuxtv.1
 
-	touch build-stamp
+	touch $@
 
 clean:
 	dh_testdir
@@ -66,7 +85,7 @@ clean:
 	# Add here commands to clean up after the build process.
 	[ ! -f Makefile ] || $(MAKE) distclean
 
-	dh_autotools-dev_restoreconfig
+	dh_autoreconf_clean
 	dh_clean
 
 	rm -f po/stamp-po po/*.gmo
