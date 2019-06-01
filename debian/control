@@ -7,6 +7,7 @@ Build-Depends:
  autotools-dev,
  zlib1g-dev,
  libpng-dev,
+ libfontconfig1-dev,
  libfreetype6-dev,
  libx11-dev,
  libxext-dev,
