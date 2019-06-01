@@ -76,8 +76,8 @@ build-stamp:  autogen-stamp config.status
 	$(MAKE) FONT_CFLAGS='-DFONTDIR="\"/usr/share/fonts/truetype/freefont\""'
 	#docbook-to-man debian/freetuxtv.sgml > freetuxtv.1
 
-#	touch $@
-	touch build-stamp
+	touch $@
+#	touch build-stamp
 
 clean:
 	dh_testdir
